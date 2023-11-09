@@ -26,7 +26,11 @@ namespace Consumer
                 
                 if (i++ % 1000 == 0)
                 {
-                    _consumer.Commit();
+                    // коммит на пачку
+                    // коммит на 1 сообщение
+                    // коммит значит прочтено
+                    // есть StoreOffset(consumeResult)
+                    _consumer.Commit(); 
                 }
             }
         }
